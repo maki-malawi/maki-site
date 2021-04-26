@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maki</title>
+  <meta name="description" content="Your ene stop for all your software, hardware needs">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+</head>
+<style>
+  .underlined {
+    text-decoration: underline;
+  }
+</style>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="underlined">Services</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="underlined">Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero is-link is-fullheight is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">Hello! we are
+        <h1 class="title is-1">
+          Maki
+        </h1>
+        <h2 class="subtitle is-3">
+          One stop for all your software, hardware needs
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-2 has-text-centered">Services</h3>
+      <h4 class="subtitle is-5 has-text-centered">What can we do for you?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Web Development</h4>
+              Develop Web sites using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or Ruby on rails PHP and MySQL or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Mobile APP development</h4>
+              Develop mobile applications using Flutter, Java for leading mobile platforms like android and IOS
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Hardware</h4>
+              We can fix faulty hardware, upgrade hardware, recommend hardware for you and your organizations
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2 has-text-centered">Contact</h3>
+        <h4 class="subtitle is-5 has-text-centered">Get in touch</h4>
+      </div>
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Call</label>
+              <a href="tel:+265884698204`">+265884698204</a>
+            </div>
+            <div class="field">
+              <label class="label">Whatsapp</label>
+              <a href="https://api.whatsapp.com/send?phone=265884698204&text=hi Maki" target="_blank" rel="noopener">Send a message to
+                us</a>
+            </div>
+            <div class="field">
+              <label class="label">Email </label>
+              <a href="mailto:makitechnologies@yahoo.com" target="_blank">makitechnologies@yahoo.com</a>
+              <p></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2 class="has-text-centered">Maki 2021</h2>
+  </footer>
+</body>
+<script type="text/javascript">
+(function() {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+})();
+</script>
+</html>
